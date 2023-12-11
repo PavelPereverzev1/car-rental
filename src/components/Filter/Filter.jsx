@@ -30,6 +30,8 @@ const Filter = () => {
       case 'to':
         setFormData({ ...formData, to: e.target.value });
         return;
+      default:
+        return;
     }
   };
 
