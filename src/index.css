@@ -1,4 +1,55 @@
+/* manrope-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/manrope-v15-latin-regular.woff2') format('woff2');
+}
+
+/* manrope-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/manrope-v15-latin-500.woff2') format('woff2');
+}
+
+/* manrope-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/manrope-v15-latin-600.woff2') format('woff2');
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+}
+
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/montserrat-v26-latin-600.woff2') format('woff2');
+}
+
 @import-normalize; /* bring in normalize.css styles */
+
+ html {
+      box-sizing: border-box;
+      width: 100vw;
+    }
+  
 
 body {
   margin: 0;
@@ -7,9 +58,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+
+  margin-top: 0;
+} 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #111111;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --black: #000000;
+  --white: #ffffff;
+  --brand: #3470ff;
+  --accent: #0b44cd;
+  --titleText: #121417;
+  --condition: #F9F9F9;
+  --textInfo: rgba(18, 20, 23, 0.50);
+  --textDivider: rgba(18, 20, 23, 0.1);
+  --inputsTitle: #8a8a89;
+  --inputsBg: #F7F7FB;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
